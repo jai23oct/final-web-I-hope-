@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
    
-<link rel="stylesheet" href = "../../static/aero/css/project1.css">
+<link rel="stylesheet" href = "../../static/aero/css/jobanputra.css">
 <link rel="stylesheet" href = "../../static/aero/css/nav.css">
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -27,38 +27,38 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand">Aeromodelling Club, IITB</a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample"
-        aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarsExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-
-   <div class="navbar-collapse collapse" id="navbarsExample">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Projects</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown03">
-                    <a class="dropdown-item" style = "width: 70%" href="#">ITSP</a>
-                    <a class="dropdown-item" style = "width: 70%" href="#">Others</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
-            </li>
-        </ul>
+  
+    <div class="navbar-collapse collapse" id="navbarsExample">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{%url 'about'%}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'teampage'%}">Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Projects</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown03">
+            <a class="dropdown-item" href="{%url 'ITSP_pro'%}}" style="width:70%">ITSP</a>
+            <a class="dropdown-item" href="{%url 'Club_pro'%}}" style="width:70%">Club Projects</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aeromodelling-club/blogs">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'gallery'%}}">Gallery<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'events'%}}"></a>Events</a>
+        </li>
+      </ul>
     </div>
-</nav>
+  </nav>
   
 
   
@@ -289,13 +289,14 @@
 					   Team-2 Members: Ronit Shukla | Shubham Lohiya | Parth Tawarawala 
 					</small>
        		       <p class="card-text inv1 invisible1">
-					The design of the plane resembles a trainer plane with moderately sensitive control surfaces to battle unexpected conditions such as rogue winds.
-			       <span class = "invisible inv">To keep the build simple and accurate, it was decided that there was to be no taper or sweep, and thus the shape of the wing as viewed from the top was a rectangle. Aspect ratio is defined as the ratio of square of span length to the area of the wing, which in the case of rectangular wings is equal to the ratio of span length to chord length.</span>  <br>  
+					The design of the plane resembles a trainer plane with moderately sensitive control surfaces <span class = "invisible inv">to battle unexpected conditions such as rogue winds.
+			       To keep the build simple and accurate, it was decided that there was to be no taper or sweep, and thus the shape of the wing as viewed from the top was a rectangle. Aspect ratio is defined as the ratio of square of span length to the area of the wing, which in the case of rectangular wings is equal to the ratio of span length to chord length. <br>  
 				   <img src="../../static/aero/css/images/boeing3.jpg">
 				   <img src="../../static/aero/css/images/boeing4.jpg">
 				   <p class="card-text">To provide ease in maneuverability, the ailerons’ area is kept around 15% of the total wing area. According to design constraints, the maximum allowed span length was 120 cm. AR is kept as 6 because lower AR results in more drag and lower effective thrust. As thrust to weight ratio is already skewed. We decided to reduce any drag inducing factors in our design.</p>
 				   <img src="../../static/aero/css/images/boeing1.jpg">
 				   <img src="../../static/aero/css/images/boeing2.jpg">
+				</span> 
 				   <p class="card-text">Our plane’s estimated weight is around 800gms. Keeping that in mind, the plane’s wing loading is 33.33 gm/dm2 without payload. Which will be ideal for the competition. 
 					Ailerons are situated somewhat off centre and towards the end of the half wings. This was done to make the ailerons more sensitive for control as ailerons towards the ends creates more torque. Each aileron has a dimension of 35 x 5 cms and are situated 2.5cms towards the end from the centre of half wing.
 				   </p>
@@ -364,14 +365,14 @@
 
 <div class="ro" cellpadding="0" cellspacing="0" style=" position:relative; z-index: 5;">
   <div class="colum" style="background-color: #021238;">
-      <div id="info">
+      <div id="info"  style = "padding-left: 10px;">
           <a id="wh" href="#a">Contact info</a><br>
           <a href="mailto:aero.club@iitb.ac.in" class="fa fa-google"></a>&nbsp; &nbsp;<a id="wh" href="#a">Email Adress</a><br>
         
       </div>  
   </div>
   <div class="colum" style="background-color: #021238;">
-      <div id="social">
+      <div id="social"  style = "padding-left: 10px;">
      
           <a href="https://www.facebook.com/aeromodellingiitb" class="fa fa-facebook"  target="_blank"> </a> &nbsp;&nbsp;
           <a href="https://www.instagram.com/aeroclub.iitb/" class="fa fa-instagram"  target="_blank"></a> &nbsp;&nbsp;
@@ -380,17 +381,17 @@
   </div>
   <div class="colum" style="background-color: #021238;color:aliceblue">
     <div id="mail">
-      <p id="wh">SUBSCRIBE TO OUR NEWSLETTER</p>
+      <p id="wh" style = "padding-left: 10px;">SUBSCRIBE TO OUR NEWSLETTER</p>
 <form action="/action_page.php">
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email"><br>
-  <input type="submit">
+  <label for="email" style = "padding-left: 10px;">Enter your email:</label>
+  <input type="email" id="email" name="email" ><br>
+  <input type="submit" style = "margin-left: 10px;">
 </form>
       </div>  
   </div>
   <div class="colum" style="background-color: #021238;">
-      <div id="adress">
-      <p id="wh">ADDRESS<br> Tinkerer's Lab, IIT Bombay Mumbai, Maharashtra 400076.
+      <div id="adress"  style = "margin-left: 10px;">
+      <p id="wh" style = "padding-left: 10px;" >ADDRESS<br> Tinkerer's Lab, IIT Bombay Mumbai, Maharashtra 400076.
       </p>
       <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D19.134156119975%252C72.916609657821%26fbclid%3DIwAR3SuQG9raHjUvR0wpTA23hpnTw9dxyKb8oGOASrFTK-yt6_VtlUhW_lpj8&h=AT01Nx9YtS7EJDCBjZEiTUxW4rXwYzyjASAx53Azt48PVlJoAo7sixtL_VuMWb0z7ir3kI_uziXRyF203kg-4wp6Xl4hJABipCUdYo42qNQQ2wZC2qPNx3rHrVMCOk6ynBZNVyzvRBMEGUesWk_Urg"><button style='font-size:15px'>Directions<i class='fas fa-directions'></i></button>
       </a>
